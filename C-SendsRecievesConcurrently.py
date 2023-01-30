@@ -17,7 +17,7 @@ async def send_messages(websocket):
             data.clear()
             n=0
             time1 = time.time()
-        await asyncio.sleep(1)
+        await asyncio.sleep(0)
 
 # async def send_messages(websocket):
 #     while True:
@@ -42,7 +42,7 @@ async def client():
                 send_task = asyncio.create_task(send_messages(websocket))
                 receive_task = asyncio.create_task(receive_messages(websocket))
                 await asyncio.gather(send_task, receive_task)
-        except websockets.exceptions.ConnectionClosed:
+        except:
             print("Trying to reconnect to server...")
             await asyncio.sleep(1)
 

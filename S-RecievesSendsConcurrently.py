@@ -10,10 +10,12 @@ clients = set()
 
 async def send_messages(websocket):
     while True:
-        await websocket.send(test)
+        await websocket.send(getMessage())
         # print(f">>>sent")
         await asyncio.sleep(1)
 
+def getMessage():
+    return fake.name()
 
 async def receive_messages(websocket):
     while True:

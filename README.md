@@ -24,3 +24,11 @@ C-SendsRecievesConcurrently.py file acts as a client, run the same in multiple t
 2. websockets: Used to build websocket connection in python, and to increase its performance.
 3. faker: Used to generate random names to communicate between server and the client.
 4. time: Used to calculate the time taken by the client to recieve 5 requests from the server.
+
+# Results!
+
+Image of the names recieved by the client<br />
+[client](https://user-images.githubusercontent.com/97978349/216213068-50821659-c294-4d9e-a3c1-e845f15c465c.png)<br />
+Image of the response recieved by the server<br />
+![server](https://user-images.githubusercontent.com/97978349/216213373-454fcaa7-e7db-483e-b956-a2be42098def.png)
+
